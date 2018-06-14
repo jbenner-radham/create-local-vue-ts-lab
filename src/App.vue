@@ -13,6 +13,9 @@
         name: 'app',
         components: {
             HelloWorld
+        },
+        mounted(): void {
+            this.$eventBus.$emit('app:event', 'Hello world!');
         }
     });
 </script>
